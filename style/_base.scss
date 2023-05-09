@@ -1,6 +1,16 @@
 //Fonts:
+    $ff-epilogue: 'Epilogue', sans-serif;
 // Colors:
     // Primary
+    $c-dark-blue: hsla(219, 43%, 16%, 1);
+    $c-grey: hsla(219, 20%, 36%, 1);
+    $c-cream: hsla(30, 35%, 93%, 1);
+    $c-cream-white: hsla(30, 29%, 97%, 1);
+    // Secondary
+    $c-a-a060ff: hsla(264, 100%, 69%, 1);
+    $c-a-cb30e3: hsla(292, 76%, 54%, 1);
+    $c-a-ffa84e: hsla(31, 100%, 65%, 1);
+    // Neutral
     $c-n-white: hsl(0,0%,100%);
     $c-n-black: hsl(0,0%,0%);
 // Screen Variables
@@ -10,6 +20,10 @@
 body{
     min-height: 100vh;
     min-height: 100svh;
+    background: $c-cream-white;
+}
+img,svg{
+    width: 100%;
 }
 
 

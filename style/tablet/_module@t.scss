@@ -1,0 +1,11 @@
+@media (min-width:43.75rem){
+    .section-title {
+        font-size: 3rem;
+        &--h1 {
+          font-size: 3.5rem;
+        }
+      }
+      .section-text {
+        font-size: 1rem;
+      }
+}
