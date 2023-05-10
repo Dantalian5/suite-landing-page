@@ -54,7 +54,13 @@
     letter-spacing: 0.1563rem;
   }
 }
-
+.footer-text{
+font-size: .9375rem;
+line-height: 213%;
+text-align: center;
+letter-spacing: .0052rem;
+color: $c-grey;
+}
 //cta modules
 .btn-1 {
   --local-btn-f-size: 1.125rem;
@@ -116,4 +122,8 @@
     letter-spacing: 0.1563rem;
     text-transform: uppercase;
   }
+}
+.social-link{
+    color: $c-dark-blue;
+    width: fit-content;
 }

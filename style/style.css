@@ -185,6 +185,24 @@ img, svg {
   gap: 2.5rem;
 }
 
+.footer {
+  padding-block: 3.5rem 5rem;
+}
+.footer--wrapper {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.footer__logo {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer__social {
+  align-items: center;
+  gap: 1.75rem;
+}
+
 .heading {
   font-family: "Epilogue", sans-serif;
   font-style: normal;
@@ -240,6 +258,14 @@ img, svg {
   color: hsl(30, 35%, 93%);
   line-height: 168%;
   letter-spacing: 0.1563rem;
+}
+
+.footer-text {
+  font-size: 0.9375rem;
+  line-height: 213%;
+  text-align: center;
+  letter-spacing: 0.0052rem;
+  color: hsl(219, 20%, 36%);
 }
 
 .btn-1 {
@@ -308,6 +334,12 @@ img, svg {
   color: hsl(219, 20%, 36%);
   letter-spacing: 0.1563rem;
   text-transform: uppercase;
+}
+
+.social-link {
+  color: hsl(219, 43%, 16%);
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media (hover: hover) {
