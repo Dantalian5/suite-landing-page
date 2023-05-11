@@ -354,7 +354,7 @@ img, svg {
     color: hsl(30, 29%, 97%);
   }
 }
-@media (min-width: 43.75rem) {
+@media (min-width: 40rem) {
   :root {
     --container-padding: 5.2%;
     --header-top-padding: 2.5rem;
