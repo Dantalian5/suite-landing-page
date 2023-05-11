@@ -1,0 +1,55 @@
+@media (min-width: 43.75rem) {
+  //----------- Layout ------------------------------------
+  :root {
+    // layout global variables:
+    --container-padding: 5.2%;
+    --header-top-padding: 2.5rem;
+  }
+  .header {
+    margin-bottom: 5.75rem;
+    &__hero {
+      gap: 5.5rem 3.625rem;
+      &__info {
+        &__text {
+          margin-block: 2.5rem;
+        }
+      }
+      &__info,
+      &__image {
+        flex-basis: 0;
+        max-width: 21.875rem;
+      }
+    }
+  }
+  .section-1{
+    &::before{
+      left: min(10.3125rem, var(--container-padding)) ;
+      right: min(10.3125rem, var(--container-padding)) ;
+    }
+    &__info{
+      margin-inline: 3.625rem;
+    }
+  }
+  .footer{
+    padding-block: 4.5rem;
+    &::before{
+      top: -28.75rem;
+    }
+    &__logo,
+    &__info,
+    &_social{
+      flex-basis: 0;
+    }
+  }
+  //----- Modules ------------------------------------
+  .heading {
+    &--hero {
+      font-size: 3.5rem;
+    }
+  }
+  .btn-2 {
+    --local-btn-f-size: 1rem;
+    --local-line-height: 200%;
+    padding: 0.75rem 1.5rem;
+  }
+}

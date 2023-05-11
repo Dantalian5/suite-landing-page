@@ -9,11 +9,14 @@
   &__row {
     flex-flow: row wrap;
   }
+  &__column{
+    flex: 1 1 100%;
+  }
 }
 
 .section {
   max-width: 90rem;
-  padding: clamp(1rem, var(--container-padding), 10.3125rem);
+  padding-inline: clamp(1rem, var(--container-padding), 10.3125rem);
   margin-inline: auto;
 }
 .header {
@@ -28,8 +31,7 @@
     row-gap: 3.5rem;
     column-gap: 3.625rem;
     &__info {
-      flex: 1 1 100%;
-      //z-index: 1;
+      z-index: 1;
       &__title {
         min-width: max-content;
       }
@@ -37,22 +39,18 @@
         margin-block: 2rem;
       }
     }
-    &__image {
-      flex: 1 1 100%;
-    }
-    &__data {
-      flex: 1 1 100%;
-      &--wrapper {
-        align-items: center;
-        justify-content: center;
-        row-gap: 2rem;
-      }
-      &__item {
-        flex: 1 1 100%;
-      }
-    }
   }
 }
+.data-box{
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem .625rem;
+    &__item{
+        flex: 1 1 11.875rem;
+    }
+}
+
+
 
 .section-1 {
   position: relative;
@@ -98,17 +96,25 @@
 }
 
 .footer {
+    position: relative;
     padding-block: 3.5rem 5rem;
-    &--wrapper{
-        flex-direction: column;
+    &::before{
+        content: '';
+        position: absolute;
+        inset: -5.625rem 0 0;
+        background: $c-cream;
+        z-index: -2;
+    }
+    &__wrapper{
         align-items: center;
         justify-content: center;
         gap: 2rem;
     }
     &__logo{
-        width: fit-content;
+        max-width: fit-content;
     }
     &__social{
+        max-width: fit-content;
         align-items: center;
         gap: 1.75rem;
     }

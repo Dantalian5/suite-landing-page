@@ -70,10 +70,9 @@ color: $c-grey;
   background: $c-dark-blue;
 }
 .btn-2 {
-  --local-inline-padding: 1rem;
   --local-btn-f-size: 0.875rem;
   --local-line-height: 172%;
-  padding: 0.75rem var(--local-inline-padding);
+  padding: 0.75rem 1rem;
   color: $c-dark-blue;
 }
 .btn {

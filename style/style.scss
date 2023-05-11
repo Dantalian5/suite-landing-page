@@ -15,8 +15,7 @@
 //@import 'theme';
 @import 'state';
 // Tablet responsive layout
-@import 'tablet/layout@t';
-@import 'tablet/module@t';
+@import 'tablet/@media-tablet';
 // Desktop responsive layout
-@import 'desktop/layout@d';
-@import 'desktop/module@d';
+//@import 'desktop/layout@d';
+//@import 'desktop/module@d';
