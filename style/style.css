@@ -396,4 +396,25 @@ img, svg {
     --local-line-height: 200%;
     padding: 0.75rem 1.5rem;
   }
+}
+@media (min-width: 64rem) {
+  :root {
+    --container-padding: 11.5%;
+    --header-top-padding: 2.5rem;
+  }
+  .section-1 {
+    padding-bottom: 0;
+  }
+  .section-1::before {
+    top: 0;
+  }
+  .section-1--wrapper {
+    flex-direction: row;
+  }
+  .section-1__img {
+    width: 23.4375rem;
+  }
+  .footer::before {
+    top: -12.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */

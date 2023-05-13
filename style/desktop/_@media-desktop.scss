@@ -1,0 +1,26 @@
+@media (min-width: 64rem) {
+  :root {
+    // layout global variables:
+    --container-padding: 11.5%;
+    --header-top-padding: 2.5rem;
+  }
+  .section-1 {
+    padding-bottom: 0;
+    &::before {
+      top: 0;
+    }
+    &--wrapper {
+      flex-direction: row;
+    }
+    &__img{
+      width: 23.4375rem;
+    }
+  }
+  .footer {
+    &::before {
+      top: -12.5rem;
+    }
+  }
+
+  //------------ modules
+}
