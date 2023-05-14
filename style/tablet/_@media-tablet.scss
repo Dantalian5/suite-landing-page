@@ -2,7 +2,7 @@
   //----------- Layout ------------------------------------
   :root {
     // layout global variables:
-    --container-padding: 5.2%;
+    --container-inline-padding: 5.2%;
     --header-top-padding: 2.5rem;
   }
   .header {
@@ -23,8 +23,8 @@
   }
   .section-1{
     &::before{
-      left: min(10.3125rem, var(--container-padding)) ;
-      right: min(10.3125rem, var(--container-padding)) ;
+      left: min(10.3125rem, var(--container-inline-padding)) ;
+      right: min(10.3125rem, var(--container-inline-padding)) ;
     }
     &__info{
       margin-inline: 3.625rem;
@@ -51,5 +51,13 @@
     --local-btn-f-size: 1rem;
     --local-line-height: 200%;
     padding: 0.75rem 1.5rem;
+  }
+}
+@media (min-width: 40rem) {
+  .title {
+    &--header {
+      font-size: 3.5rem;
+      line-height: 114%;
+    }
   }
 }

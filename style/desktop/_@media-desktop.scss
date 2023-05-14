@@ -1,7 +1,7 @@
 @media (min-width: 64rem) {
   :root {
     // layout global variables:
-    --container-padding: 11.5%;
+    --container-inline-padding: 11.5%;
     --header-top-padding: 2.5rem;
   }
   .header{
@@ -56,6 +56,32 @@
     &--accent ,
     &--data{
       text-align: start;
+    }
+  }
+}
+@media (min-width: 64rem) {
+  .title,
+  .text {
+    text-align: left;
+  }
+  .title {
+    &--header {
+      font-size: 4.5rem;
+      line-height: 108%;
+    }
+    &--section {
+      font-size: 3rem;
+      line-height: 117%;
+    }
+  }
+  .text {
+    &--header {
+      font-size: 1.125rem;
+      line-height: 178%;
+    }
+    &--section {
+      font-size: 1.25rem;
+      line-height: 175%;
     }
   }
 }

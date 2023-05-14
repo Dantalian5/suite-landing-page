@@ -1,7 +1,18 @@
 :root {
   // layout global variables:
-  --container-padding: 4%;
+  --container-inline-padding: 4%;
   --header-top-padding: 1.5rem;
+}
+//--------------------------
+.block {
+}
+.block-flex {
+  display: flex;
+  flex-flow: row wrap;
+  &__column {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
 }
 //--------------------------
 .flex {
@@ -9,14 +20,14 @@
   &__row {
     flex-flow: row wrap;
   }
-  &__column{
+  &__column {
     flex: 1 1 100%;
   }
 }
 
 .section {
   max-width: 90rem;
-  padding-inline: clamp(1rem, var(--container-padding), 10.3125rem);
+  padding-inline: clamp(1rem, var(--container-inline-padding), 10.3125rem);
   margin-inline: auto;
 }
 .header {
@@ -41,16 +52,14 @@
     }
   }
 }
-.data-box{
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem .625rem;
-    &__item{
-        flex: 1 1 11.875rem;
-    }
+.data-box {
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem 0.625rem;
+  &__item {
+    flex: 1 1 11.875rem;
+  }
 }
-
-
 
 .section-1 {
   position: relative;
@@ -96,26 +105,31 @@
 }
 
 .footer {
-    position: relative;
-    padding-block: 3.5rem 5rem;
-    &::before{
-        content: '';
-        position: absolute;
-        inset: -5.625rem 0 0;
-        background: $c-cream;
-        z-index: -2;
-    }
-    &__wrapper{
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-    }
-    &__logo{
-        max-width: fit-content;
-    }
-    &__social{
-        max-width: fit-content;
-        align-items: center;
-        gap: 1.75rem;
-    }
+  position: relative;
+  padding-block: 3.5rem 5rem;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -5.625rem 0 0;
+    background: $c-cream;
+    z-index: -2;
+  }
+  &__wrapper {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-basis: 0;
+  }
+  &__logo {
+    max-width: fit-content;
+  }
+  &__info {
+    max-width: fit-content;
+    margin-inline: auto;
+  }
+  &__social {
+    max-width: fit-content;
+    align-items: center;
+    gap: 1.75rem;
+  }
 }
