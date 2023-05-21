@@ -227,6 +227,7 @@ img, svg {
 .title--ID {
   font-size: 1.125rem;
   line-height: 178%;
+  text-transform: uppercase;
 }
 
 .text {
