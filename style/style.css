@@ -173,7 +173,6 @@ img, svg {
 }
 .footer__wrapper {
   gap: 2rem;
-  row-gap: auto;
 }
 .footer__logo {
   max-width: -moz-fit-content;
