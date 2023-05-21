@@ -1,55 +1,46 @@
-@media (min-width: 40rem) {
+@media (min-width: 42.5rem) {
   //----------- Layout ------------------------------------
   :root {
     // layout global variables:
-    --container-padding: 5.2%;
+    --container-inline-padding: 5.2%;
     --header-top-padding: 2.5rem;
   }
-  .header {
-    margin-bottom: 5.75rem;
-    &__hero {
-      gap: 5.5rem 3.625rem;
-      &__info {
-        &__text {
-          margin-block: 2.5rem;
-        }
-      }
-      &__info,
-      &__image {
-        flex-basis: 0;
-        max-width: 21.875rem;
-      }
-    }
-  }
-  .section-1{
-    &::before{
-      left: min(10.3125rem, var(--container-padding)) ;
-      right: min(10.3125rem, var(--container-padding)) ;
-    }
+  .hero {
     &__info{
-      margin-inline: 3.625rem;
+      max-width: 21.875rem;
+      margin-right: 3.625rem;
+    }
+    &__image {
+      max-width: 21.875rem;
+      flex-basis: 15rem;
     }
   }
-  .footer{
-    padding-block: 4.5rem;
-    &::before{
-      top: -28.75rem;
-    }
-    &__logo,
-    &__info,
-    &_social{
-      flex-basis: 0;
+  .section-1 {
+    margin-top: 5.75rem;
+    &__wrapper {
+      padding-inline: 3.625rem;
     }
   }
-  //----- Modules ------------------------------------
-  .heading {
-    &--hero {
+  .footer {
+    padding-block: 5.9375rem 4.5rem;
+    &__info {
+      max-width: fit-content;
+    }
+  }
+  // modules
+  .title {
+    &--header {
       font-size: 3.5rem;
+      line-height: 114%;
     }
   }
-  .btn-2 {
-    --local-btn-f-size: 1rem;
-    --local-line-height: 200%;
-    padding: 0.75rem 1.5rem;
+  .section-1-bg {
+    &::before {
+      left: min(10.3125rem, var(--container-inline-padding));
+      right: min(10.3125rem, var(--container-inline-padding));
+    }
+  }
+  .footer-bg::before {
+    top: -28rem;
   }
 }

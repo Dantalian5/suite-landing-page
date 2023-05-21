@@ -1,61 +1,88 @@
 @media (min-width: 64rem) {
   :root {
     // layout global variables:
-    --container-padding: 11.5%;
+    --container-inline-padding: 11.5%;
     --header-top-padding: 2.5rem;
   }
-  .header{
-    margin-bottom: 9rem;
-    &__hero{
-      &__data{
-        flex-basis: 0;
-        max-width: 11.875rem;
-      }
+  .hero {
+    &__info {
+      margin-right: 7.8125rem;
     }
+    &__data {
+      flex-basis: 0;
+      margin-left: 6rem;
+    }
+  }
+  .data-box {
+    justify-content: flex-start;
+    row-gap: 3.9375rem;
   }
   .section-1 {
-    padding-bottom: 0;
-    &::before {
-      top: 3.4375rem;
-    }
-    &--wrapper {
-      flex-direction: row;
-      padding-inline: min(7rem, 10%);
+    margin-top: 9.625rem;
+    &__wrapper {
+      align-items: flex-end;
     }
     &__img {
-      flex: 1 1 375px;
+      max-width: 21.875rem;
     }
     &__curve {
-      align-self: flex-start;
-      margin: 15rem 3.2963rem 0 1.875rem;
-      width: 4rem;
+      flex-basis: 0;
+      margin-inline: 2.25rem 3.25rem;
+      margin-bottom: 19rem;
+      max-width: fit-content;
     }
     &__info {
-      flex: 1 1 350px;
       max-width: 21.875rem;
-      margin-inline: 0;
-      margin-block: 8.9375rem 5.5rem;
+      margin-block: 8%;
     }
   }
-  .footer {
-    &::before {
-      top: -12.5rem;
-    }
+  //----------
+  .section-1-image {
+    width: 100%;
   }
+  //----------
 
-  //------------ modules
-  .heading {
-    &--section,
-    &--accent,
-    &--data {
-      text-align: start;
+  .title,
+  .text {
+    text-align: left;
+  }
+  .title {
+    &--header {
+      font-size: 4.5rem;
+      line-height: 108%;
+    }
+    &--section {
+      font-size: 3rem;
+      line-height: 117%;
     }
   }
-  .body {
-    &--section,
-    &--accent ,
-    &--data{
-      text-align: start;
+  .text {
+    &--header {
+      font-size: 1.125rem;
+      line-height: 178%;
     }
+    &--section {
+      font-size: 1.25rem;
+      line-height: 175%;
+    }
+  }
+  .data-module {
+    margin-inline: 0 auto;
+  }
+  .btn-2 {
+    padding-inline: 1.5rem;
+  }
+  .section-1-bg {
+    &::before {
+      top: 9%;
+    }
+  }
+  .pointer-curve {
+    min-width: 2rem;
+    width: 100%;
+    max-width: 4rem;
+  }
+  .footer-bg::before {
+    top: -100%;
   }
 }
