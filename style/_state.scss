@@ -1,0 +1,17 @@
+@media (hover: hover) {
+  .btn-1:hover {
+    background: linear-gradient(
+      135deg,
+      $c-a-a060ff 0%,
+      $c-a-cb30e3 49.21%,
+      $c-a-ffa84e 100%
+    );
+  }
+  .btn-2:hover {
+    background: $c-dark-blue;
+    color: $c-cream-white;
+  }
+  .footer__social__item:hover {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,93 @@
+:root {
+  // layout global variables:
+  --container-inline-padding: 4%;
+  --header-top-padding: 1.5rem;
+}
+//--------------------------
+.flex {
+  display: flex;
+}
+.row {
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.column {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+.column-separator{
+  flex-basis: 100%;
+}
+.column-info{
+  flex-basis: 18.75rem;
+  z-index: 1;
+  &__text {
+    margin-block: 2rem;
+  }
+}
+.section {
+  max-width: 90rem;
+  padding-inline: clamp(1rem, var(--container-inline-padding), 10.3125rem);
+  margin-inline: auto;
+}
+.header {
+  padding-top: var(--header-top-padding);
+  &__navbar {
+    margin-bottom: 5rem;
+  }
+  &__hero {
+    row-gap: 3.5rem;
+  }
+}
+.hero {
+  &__title {
+    max-width: 1rem;
+  }
+  &__data {
+    flex-basis: 100%;
+  }
+}
+.data-box {
+  justify-content: space-between;
+  gap: 2rem 0.625rem;
+  &__item {
+    flex: 1 1 11.875rem;
+  }
+}
+.section-1 {
+  margin-top: 3.5rem;
+  &__wrapper{
+    row-gap: 2.5rem;
+  }
+  &__img {
+    flex-basis: 15.625rem;
+  }
+  &__curve {
+    width: fit-content;
+  }
+  &__info {
+    align-self: flex-end;
+    margin-bottom: 4rem;
+  }
+}
+.footer {
+  position: relative;
+  padding-block: 3.5rem 5rem;
+  &__wrapper {
+    gap: 2rem;
+    row-gap: auto;
+  }
+  &__logo {
+    max-width: fit-content;
+  }
+  &__info {
+    margin-inline: auto;
+  }
+  &__social {
+    max-width: fit-content;
+    align-items: center;
+    gap: 1.75rem;
+  }
+}
